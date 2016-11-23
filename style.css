@@ -1,0 +1,121 @@
+/*
+Theme Name:   Rappelkiste
+Theme URI:    https://bessunger-rappelkiste.de/
+Description:  Rappelkiste Theme
+Author:       Christine Coenen
+Author URI:   http://christine-coenen.de/
+Template:     hemingway
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  rappelkiste
+*/
+
+/* Header-Bild in der Größe begrenzen */
+.header.section {
+	width: 1024px;
+	max-width: 86%;
+	padding: 0;
+	margin: auto;
+}
+
+.header-inner {
+	position: absolute;
+	top: 20%;
+}
+
+.header-cover.section.bg-dark-light {
+	background-color: white;
+}
+
+/* Menü etwas nach links schieben */
+.blog-menu {
+	margin-left: -20px;
+}
+
+/* Menüschrift größer und heller */
+.blog-menu a,
+.mobile-menu a {
+	font-size: 15px;
+	color: rgba(255,255,255,0.6);
+}
+
+.blog-menu > .has-children::after, 
+.blog-menu > .page_item_has_children::after {
+	border-top-color: rgba(255,255,255,0.6);
+}
+
+/* mobile Menü-Icons heller */
+.nav-toggle .bar,
+.search-toggle .handle,
+.search-toggle .metal {
+	background: rgba(255,255,255,0.6);
+}
+
+/* Menü-Items niedriger */
+.mobile-menu a,
+.blog-menu ul a {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+/* im Menü keine Schrägstriche als Trenner */
+.blog-menu > li:before {
+	content: none;
+}
+
+/* keine Großbuchstaben */
+.blog-menu a,
+.post-meta,
+.widget-title,
+.post-nav h5,
+.credits-inner,
+.page-title h4 {
+	text-transform: none;
+}
+
+/* Schrägstriche verstecken */
+.date-sep {
+	visibility: hidden;
+}
+
+/* Footerschrift heller */
+.footer,
+.footer a,
+.credits, 
+.credits a {
+	color: rgba(255,255,255,0.6);
+}
+
+.footer a:hover,
+.credits a:hover,
+.footer .widget-content {
+	color: white;
+}
+
+/* weniger Padding für den Footer */
+.credits-inner {
+	padding-bottom: 2em;
+}
+
+.footer.section.large-padding {
+	padding: 3em 0 1em;
+}
+
+/* smaller font size in articles */
+.post-content p,
+.post-content blockquote,
+.post-content ul,
+.post-content ol,
+.post-content address,
+.post-content dl,
+.post-content .wp-caption,
+.post-content pre {
+	font-size: 90%;
+}
+
+/* text selection */
+::selection {
+	color: white;
+}
